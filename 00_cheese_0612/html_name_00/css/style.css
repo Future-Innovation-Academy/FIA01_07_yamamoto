@@ -1,0 +1,217 @@
+/* ここから下に記載していく */
+@charset "utf-8";
+
+html{
+    font-size: 62.5%; /* 16px x 62.5% = 10px */
+}
+body{
+    color: #333333;
+    font-family:"Open Sans",'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif;
+    font-size: 1.6rem;
+}
+
+.site-title{
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #fff;
+}
+.site-title__text{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate3d(-50%,-50%,0);
+    color: #fff;
+    font-size: 4.0rem;
+    /*font-size:5vw;/*72/1440=0.05→0.01=1vw*/
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* header */
+.header{
+    background-color: #fff;
+}
+
+.header-wrapper{
+    max-width: 1140px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+.nav-list{
+    display: flex;
+}
+.nav-item{
+    margin:50px 25px;
+}
+
+/*about(sectionの頭で共通) */
+.about{
+    padding-top: 60px;
+    padding-bottom: 80px;
+
+}
+.about-wrapper{
+    width: 560px;
+    margin: auto;
+}
+/*ToDo共通化のために名称変更*/
+.yellow__title{
+    margin:60px 0px 30px;
+    font-size:  2.4rem;
+    font-weight: bold;
+    color: #ffd61a;
+}
+.black__title{
+    margin:60px 0px 30px;
+    font-size:  2.4rem;
+    font-weight: bold;
+    color: #222222;
+}
+/*日本語タイトル　18px 共通*/
+.profile__name{ 
+    margin:0px 0px 40px;
+    font-size:  1.8rem;
+}
+/*本文 16px　共通 */
+.profile__text{
+    font-size:  1.6rem;
+    line-height: 2;
+    text-align: justify;
+    /*IE用設定 */
+    text-align: inter-deograph;
+}
+
+
+.btn{
+    /*インラインレベルボックス→ブロックレベル */
+    display: block;
+    /*ボタンデザイン */
+    width: 300px;
+    padding: 21px 0;
+    margin: auto;
+    text-align: center;
+    font-size:  1.8rem;
+    background-color: #ffd61a;
+    color: #fff;
+    
+}
+/* ---------------
+        news
+-----------------*/
+.news{
+    padding: 60px 0px;
+    background-color: #fff;
+}
+.news_flex{
+    display:flex;
+    margin-bottom: 60px;
+}
+
+.news__item{
+    width: 33.333%;
+}
+
+.wrapper{
+    max-width: 1140px;
+    margin-bottom: 60px;
+}
+
+.news__eyecatch{
+    margin: 0px 0px 24px;
+
+}
+
+.news__hedding{
+    margin: 0px 0px 24px;
+    /*font-weight:bold;*/
+    line-height: 2;
+}
+.news__text{
+    font-size:  1.6rem;
+    line-height: 1.75;
+    text-align: justify;
+    /*IE用設定 */
+    text-align: inter-deograph;
+}
+
+.news__contents{
+    padding: 0px 0px 30px;
+}
+
+/* ---------------
+    Contact
+-----------------*/
+.contact{
+    padding: auto;
+}
+.contact-wrapper{
+    width: 568px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+.form-inner{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 0px 40px;
+}
+.form-title{
+    width: 224px;
+    margin:0px 64px 0px 0px;
+    text-align: left;
+
+}
+.form-item{
+    width: 200px;
+    margin: 8px 0px ;
+    text-align: left;
+}
+.form-parts{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    font-size:  1.6rem;
+    border: solid 1px #bfbfbf;
+    
+}
+
+
+/* ---------------
+        access
+-----------------*/
+.access__hedding{
+    margin: 30px 0px 60px;
+    /*font-weight:bold;*/
+    line-height: 2;
+}
+.access__text{
+    font-size:  1.6rem;
+    line-height: 1.75;
+    text-align: justify;
+    /*IE用設定 */
+    text-align: inter-deograph;
+}
+
+
+/*--------------------
+ * footer
+ *---------------------*/
+.footer{
+    padding: 30px 0;
+    background-color: #707070;
+    
+}
+
+.copyrights{
+    font-size: 1.2rem;
+}
